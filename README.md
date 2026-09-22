@@ -1,94 +1,82 @@
-# exp_3_vi_characteristics_of_gunn_oscillator
+# exp_3_characteristics of directional couplee
 
-# Experiment 3 — V–I Characteristics of Gunn Oscillator
+
+# Experiment 3 — CHARACTRISTICS OF DIRECTIONAL COUPLEE
 
 ---
 
 ## Aim
 
-To study the I–V characteristics of a Gunn diode and the depth of modulation of a PIN diode.
+To study a microwave directional coupler and to determine its coupling factor, insertion loss, isolation and directivity.
 
 ## Apparatus Used
 
-Gunn power supply, Gunn oscillator, PIN modulator, isolator, frequency meter, variable attenuator, detector mount, slotted section, VSWR meter.
+1 Klystron power supply. 2 Klystron tube (2K25) with mount. 3 Isolator. 4 Frequency meter. 5 Variable attenuator. 6 Directional coupler (device under test). 7 Two detector mounts. 8 Matched termination. 9 VSWR meter. 10Waveguide stands.
 
 ## Experimental Setup
 
-<img width="2170" height="725" alt="image" src="https://github.com/user-attachments/assets/9572ed54-7f9f-413c-b568-c08d9049d680" />
+<img width="940" height="312" alt="image" src="https://github.com/user-attachments/assets/674bcd16-76bf-4c4c-872a-317097a1001e" />
+
 
 ---
 
 ## Theory
 
-The Gunn oscillator is based on the **negative differential conductivity** effect in bulk semiconductors. The Gunn diode has two conduction bands separated by an energy gap larger than thermal agitation energies. When an electron is transferred to the satellite energy band it acquires negative differential mobility, producing the negative resistance required for oscillation.
+A directional coupler is a four–port waveguide junction consisting of a primary (main) waveguide and a secondary (auxiliary) waveguide coupled to it through one or more small apertures. In a typical two–hole (Bethe–hole type) coupler, the coupling holes are spaced a quarter of a guide wavelength apart, so that the waves coupled through the two holes add constructively in the forward direction of the secondary guide and cancel in the reverse direction. This gives the device its directional property: power injected at the input port mainly couples into the secondary guide travelling toward the “coupled” port, while very little couples toward the “isolated” port. The four ports of a directional coupler are usually identified as: the input port, the transmitted (through) port on the main line, the coupled port on the secondary line (in the forward direction), and the isolated port on the secondary line (in the reverse direction, ideally carrying no power). For a two–hole coupler the holes are separated by s = λg/4, where λg is the guide wavelength at the operating frequency; this quarter–wave spacing is what makes the two coupled contributions add in the forward direction and cancel in the reverse direction. All readings in this experiment are taken directly in dB on a calibrated VSWR meter, which uses a square–law crystal detector followed by a logarithmic amplifier; hence the meter reading is already proportional to power in dB and no separate detector–law correction is required for the calculations below. The performance of a directional coupler is described by the following parameters, all expressed in decibels: the coupling factor, which is the ratio of the input power to the coupled power; the insertion loss, the ratio of input power to the power delivered at the through port; the isolation, the ratio of input power to the power leaking to the isolated port; and the directivity, the ratio of the coupled power to the power at the isolated port, which is a measure of how well the coupler distinguishes the direction of the travelling wave.
 
-In a Gunn oscillator the diode is placed in a resonant cavity, so the oscillation frequency is set by the cavity dimensions rather than by the diode itself.
+CIRCUIT / PORT DIAGRAM
 
-Although a Gunn oscillator can be amplitude-modulated with the bias voltage, a separate **PIN modulator** is used in this experiment: a square-wave modulating signal is applied through the modulator onto the microwave carrier.
+<img width="686" height="306" alt="image" src="https://github.com/user-attachments/assets/34a0806b-f4f1-49c6-86ba-3aa591b607c9" />
 
-<img width="542" height="341" alt="image" src="https://github.com/user-attachments/assets/313e43ed-dd69-4b09-9a4f-7a7616faa805" />
+PROCEDURE
+
+1. The bench is set up as in Fig. 1 with the klystron tuned to give a stable output at the working frequency.
+2. With the directional coupler removed, the detector is connected directly after the variable attenuator and the incident power Pi is noted on the VSWR meter.
+3. Coupling factor: the coupler is inserted, the through port is terminated in a matched load, the isolated port is also terminated, and the detector is connected to the coupled port; the reading Pc is noted.
+4. Insertion loss: with the coupled port terminated in a matched load, the detector is connected to the through port and the transmitted power Pt is noted.
+5. Isolation / Directivity: the input and through connections are interchanged (power fed from the opposite end / through port terminated appropriately) so that power now travels toward the isolated port; the detector reading Piso at the isolated port is noted with the coupled port similarly excited for comparison. 6. All readings are recorded in dB (or converted to power) and used to compute the four parameters using the formulae below.
 
 ---
 
-## Procedure
+PROCEDURE FLOWCHART
 
-1. Set up the components and equipment as shown in the figure above.
-2. Initially set the variable attenuator for maximum attenuation.
-3. Keep the control knobs of the Gunn power supply as follows:
-
-   | Control | Setting |
-   |---|---|
-   | Meter switch | OFF |
-   | Gunn bias knob | Fully anti-clockwise |
-   | PIN bias knob / Mod amplifier | Mid position |
-   | PIN mod frequency | Mid position |
-
-4. Keep the control knobs of the VSWR meter as follows:
-
-   | Control | Setting |
-   |---|---|
-   | Meter switch | Normal |
-   | Input switch | Crystal low impedance / 200 K |
-   | Range dB switch | 50 dB |
-   | Gain control knob | Fully clockwise |
-
-5. Set the micrometer of the Gunn oscillator between 5–7 mm for the required frequency of operation.
-6. Switch ON the Gunn power supply, the VSWR meter and the cooling fan.
-7. Keep the mode switch of the Gunn power supply at square wave / internal modulation.
-8. Turn the meter knob to the voltage position and note that as the Gunn bias voltage is varied the current starts decreasing — this indicates the negative resistance characteristic of the Gunn diode. Apply a voltage that puts the device in the middle of the negative resistance region.
-9. Connect the detector output to the SWR meter.
-10. Adjust the square-wave modulation frequency to approximately 1 kHz.
-11. Change the meter range if no deflection is observed.
-12. Keep the slotted-line probe at the position where maximum deflection is observed on the meter.
-13. Adjust the attenuator setting and the gain control knob of the VSWR meter and tune the detector plunger so the pointer indicates VSWR = 1.
-14. Move the detector probe along the slotted line and note the position where the pointer reaches the extreme left — the first minimum. To locate the minimum exactly, note the positions of equal-response points on either side; their midpoint gives the position of the minimum. Note the next minimum position the same way.
-15. Repeat the above procedure for different micrometer settings.
-
-### Depth of Modulation of the PIN Diode
-
-1. Apply the Gunn bias voltage slowly until the panel meter of the Gunn power supply reads 8 V.
-2. Tune the PIN modulator bias voltage and frequency knobs for maximum output on the oscilloscope.
-3. Align the bottom of the square wave on the oscilloscope with a reference level and note the micrometer reading of the variable attenuator.
-4. Now, using the variable attenuator, align the top of the square wave with the same reference level and note the micrometer reading.
-5. Connect the VSWR meter to the detector mount and note the dB reading for both micrometer settings of the variable attenuator.
-6. The difference between the two dB readings gives the modulation depth of the PIN modulator.
-
-> **Note:** After tuning the Gunn source, follow the same procedure for VSWR and impedance measurement as for the depth of modulation of the PIN modulator.
+<img width="1031" height="542" alt="image" src="https://github.com/user-attachments/assets/30b962f5-1bb9-4ebf-9906-b8dcaaeb9687" />
 
 ## Observation
 
-*(Include your own table relevant to the experiment.)*
+TABULATION
+
+<img width="1037" height="217" alt="image" src="https://github.com/user-attachments/assets/41a13bbe-4aa5-43c6-a60f-355a9385612c" />
+
+
+FORMULA
+
+1. Coupling Factor, C = Pi – Pc = 10 log10 (Pi / Pc) dB
+2. Insertion Loss, IL = Pi – Pt = 10 log10 (Pi / Pt) dB
+3. Isolation, I = Pi – Piso = 10 log10 (Pi / Piso) dB
+4. Directivity, D = I – C dB
+
+MODEL GRAPH AND ACTUAL GRAPH
+
+<img width="982" height="407" alt="image" src="https://github.com/user-attachments/assets/5d5a5efc-5a0d-4f07-a35c-d66a2b3cbb5d" />
+
 
 ## Calculation
 
-*(Include your own calculation relevant to the experiment.)*
+1. Using the average readings (Pi taken as the 0 dB reference):
+2. C = 0.0 – (–19.9) = 19.9 dB
+3. IL = 0.0 – (–1.05) = 1.05 dB
+4. I = 0.0 – (–31.75) = 31.75 dB
+5. D = I – C = 31.75 – 19.9 = 11.85 dB
 
 ## Precautions
 
-* Check the connections before switching on the kit.
-* Make all connections properly.
-* Take the observations carefully.
+1. All ports not being measured must be terminated in matched loads to avoid reflections that would distort the readings.
+2. Connections between waveguide flanges should be tight and properly aligned.
+3. The klystron output should be kept stable (constant beam and repeller voltage) throughout a set of readings.
+4. The frequency meter should be de–tuned (off resonance) except when measuring frequency, to avoid an additional loss.
+5. Do not look directly into the open waveguide.
 
-## Conclusion
+result
 
-*(Write your own.)*
+The characteristics of the given microwave directional coupler were measured. Coupling Factor C = 19.9 dB (close to its rated 20 dB coupling), Insertion Loss IL = 1.05 dB, Isolation I = 31.75 dB, and Directivity D = 11.85 dB, values that are consistent with a typical two–hole X–band waveguide directional coupler.
