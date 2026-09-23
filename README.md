@@ -1,7 +1,7 @@
-# exp_3_characteristics of directional couplee
+# exp_4_characteristics of directional couplee
 
 
-# Experiment 3 — CHARACTRISTICS OF DIRECTIONAL COUPLEE
+# Experiment 4 — CHARACTRISTICS OF DIRECTIONAL COUPLEE
 
 ---
 
